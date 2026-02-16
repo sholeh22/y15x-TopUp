@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y15x Top Up - Form Top Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-area">
+            <i class="fas fa-bolt logo-icon"></i>
+            <span class="logo-text">Y15x <span class="logo-highlight">Top Up</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="games.html"><i class="fas fa-gamepad"></i> Games</a>
+            <a href="topup.html" class="active"><i class="fas fa-coins"></i> Top Up</a>
+            <a href="invoice.html"><i class="fas fa-file-invoice"></i> Invoice</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="contact.html"><i class="fas fa-headset"></i> Contact</a>
+        </div>
+        <div class="user-profile">
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </nav>
+
+    <!-- Page Header Modern -->
+    <div class="page-header-modern">
+        <div class="header-content">
+            <h1>⚡ Form Top Up</h1>
+            <p>Isi data dengan benar agar proses berjalan lancar</p>
+            <div class="header-stats">
+                <span><i class="fas fa-clock"></i> Proses 1-5 Menit</span>
+                <span><i class="fas fa-shield-alt"></i> 100% Aman</span>
+                <span><i class="fas fa-headset"></i> Support 24/7</span>
+            </div>
+        </div>
+        <div class="header-icon">
+            <i class="fas fa-coins"></i>
+        </div>
+    </div>
+
+    <!-- Top Up Container Modern -->
+    <div class="topup-container-modern">
+        <!-- Left Panel - Form -->
+        <div class="topup-form-panel-modern">
+            <div class="form-section">
+                <h2><i class="fas fa-gamepad"></i> Pilih Game</h2>
+                <div class="game-selector-modern">
+                    <select id="gameSelect" class="modern-select">
+                        <option value="mlbb">🎮 Mobile Legends</option>
+                        <option value="ff">🔥 Free Fire</option>
+                        <option value="pubg">🚗 PUBG Mobile</option>
+                        <option value="valorant">🔫 Valorant</option>
+                        <option value="genshin">🌟 Genshin Impact</option>
+                        <option value="codm">💣 COD Mobile</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2><i class="fas fa-id-card"></i> Data Akun</h2>
+                <div class="input-group-modern">
+                    <label>User ID / Player ID <span class="required">*</span></label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="userId" placeholder="Contoh: 123456789" class="modern-input">
+                    </div>
+                    <small class="input-hint">Masukkan ID game Anda dengan benar</small>
+                </div>
+                <div class="input-group-modern">
+                    <label>Server / Zone ID <span class="optional">(opsional)</span></label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-server"></i>
+                        <input type="text" id="serverId" placeholder="Contoh: 1122" class="modern-input">
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2><i class="fas fa-database"></i> Pilih Nominal</h2>
+                <div class="denom-grid-modern">
+                    <div class="denom-item-modern" data-nominal="10000">
+                        <span class="denom-value">100</span>
+                        <span class="denom-type">Diamond</span>
+                        <span class="denom-price">Rp 10.000</span>
+                        <div class="denom-badge">POPULER</div>
+                    </div>
+                    <div class="denom-item-modern" data-nominal="25000">
+                        <span class="denom-value">250</span>
+                        <span class="denom-type">Diamond</span>
+                        <span class="denom-price">Rp 25.000</span>
+                    </div>
+                    <div class="denom-item-modern" data-nominal="50000">
+                        <span class="denom-value">500</span>
+                        <span class="denom-type">Diamond</span>
+                        <span class="denom-price">Rp 50.000</span>
+                        <div class="denom-badge">HEMAT</div>
+                    </div>
+                    <div class="denom-item-modern" data-nominal="100000">
+                        <span class="denom-value">1050</span>
+                        <span class="denom-type">Diamond</span>
+                        <span class="denom-price">Rp 100.000</span>
+                    </div>
+                    <div class="denom-item-modern" data-nominal="200000">
+                        <span class="denom-value">2200</span>
+                        <span class="denom-type">Diamond</span>
+                        <span class="denom-price">Rp 200.000</span>
+                        <div class="denom-badge">BONUS</div>
+                    </div>
+                    <div class="denom-item-modern" data-nominal="500000">
+                        <span class="denom-value">5680</span>
+                        <span class="denom-type">Diamond</span>
+                        <span class="denom-price">Rp 500.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2><i class="fas fa-credit-card"></i> Metode Pembayaran</h2>
+                <div class="payment-grid-modern">
+                    <div class="payment-item-modern">
+                        <i class="fas fa-wallet"></i>
+                        <span>OVO</span>
+                    </div>
+                    <div class="payment-item-modern">
+                        <i class="fas fa-mobile-alt"></i>
+                        <span>DANA</span>
+                    </div>
+                    <div class="payment-item-modern">
+                        <i class="fas fa-university"></i>
+                        <span>BCA</span>
+                    </div>
+                    <div class="payment-item-modern">
+                        <i class="fas fa-qrcode"></i>
+                        <span>QRIS</span>
+                    </div>
+                    <div class="payment-item-modern">
+                        <i class="fas fa-credit-card"></i>
+                        <span>Gopay</span>
+                    </div>
+                    <div class="payment-item-modern">
+                        <i class="fas fa-mobile"></i>
+                        <span>ShopeePay</span>
+                    </div>
+                    <div class="payment-item-modern">
+                        <i class="fas fa-university"></i>
+                        <span>Mandiri</span>
+                    </div>
+                    <div class="payment-item-modern">
+                        <i class="fas fa-university"></i>
+                        <span>BRI</span>
+                    </div>
+                </div>
+            </div>
+
+            <button id="topupSubmit" class="btn-topup-modern">
+                <i class="fas fa-bolt"></i> Proses Top Up Sekarang
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <!-- Right Panel - Info & Summary -->
+        <div class="topup-info-panel-modern">
+            <!-- Order Summary -->
+            <div class="info-card-modern summary-card">
+                <h3><i class="fas fa-shopping-cart"></i> Ringkasan Order</h3>
+                <div id="orderSummary" class="order-summary">
+                    <div class="summary-item">
+                        <span>Game:</span>
+                        <span class="summary-value" id="summaryGame">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>ID Player:</span>
+                        <span class="summary-value" id="summaryId">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Nominal:</span>
+                        <span class="summary-value" id="summaryNominal">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Harga:</span>
+                        <span class="summary-value" id="summaryPrice">-</span>
+                    </div>
+                    <div class="summary-item">
+                        <span>Pembayaran:</span>
+                        <span class="summary-value" id="summaryPayment">-</span>
+                    </div>
+                    <div class="summary-total">
+                        <span>Total Bayar:</span>
+                        <span class="total-price" id="totalPrice">Rp 0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Panduan -->
+            <div class="info-card-modern">
+                <h3><i class="fas fa-info-circle"></i> Panduan Pengisian</h3>
+                <ul class="guide-list">
+                    <li><i class="fas fa-check-circle"></i> Pastikan ID Player benar</li>
+                    <li><i class="fas fa-check-circle"></i> Cek kembali server/zone</li>
+                    <li><i class="fas fa-check-circle"></i> Pilih nominal yang diinginkan</li>
+                    <li><i class="fas fa-check-circle"></i> Pilih metode pembayaran</li>
+                    <li><i class="fas fa-check-circle"></i> Klik Proses Top Up</li>
+                </ul>
+            </div>
+
+            <!-- Estimasi -->
+            <div class="info-card-modern">
+                <h3><i class="fas fa-clock"></i> Estimasi Proses</h3>
+                <div class="estimasi-content">
+                    <div class="progress-steps">
+                        <div class="step">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pembayaran</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step">
+                            <i class="fas fa-clock"></i>
+                            <span>Verifikasi (1-2 menit)</span>
+                        </div>
+                        <div class="step-line"></div>
+                        <div class="step">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Top Up Masuk</span>
+                        </div>
+                    </div>
+                    <p class="estimasi-text">Top up akan diproses dalam <strong>1-5 menit</strong> setelah pembayaran berhasil.</p>
+                </div>
+            </div>
+
+            <!-- Promo -->
+            <div class="info-card-modern promo-card">
+                <i class="fas fa-gift"></i>
+                <h3>Bonus Spesial!</h3>
+                <p>Dapatkan bonus 5% untuk setiap top up di atas Rp100.000</p>
+                <div class="promo-code">
+                    <span>BONUS5</span>
+                    <button class="copy-btn"><i class="fas fa-copy"></i></button>
+                </div>
+            </div>
+
+            <!-- Butuh Bantuan -->
+            <div class="info-card-modern help-card">
+                <i class="fas fa-headset"></i>
+                <h3>Butuh Bantuan?</h3>
+                <p>Hubungi customer service kami jika mengalami kendala</p>
+                <div class="help-buttons">
+                    <a href="contact.html" class="btn-help"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="contact.html" class="btn-help"><i class="fas fa-envelope"></i> Email</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Modern -->
+    <footer class="footer-modern">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <i class="fas fa-bolt footer-logo"></i>
+                <h3>Y15x Top Up</h3>
+                <p>Solusi top up game terpercaya dengan harga termurah dan proses tercepat. Sudah melayani 100.000+ pelanggan.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="topup.html">Top Up</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Game Populer</h4>
+                <a href="topup.html?game=mlbb">Mobile Legends</a>
+                <a href="topup.html?game=ff">Free Fire</a>
+                <a href="topup.html?game=pubg">PUBG Mobile</a>
+                <a href="topup.html?game=valorant">Valorant</a>
+                <a href="topup.html?game=genshin">Genshin Impact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
+                <p><i class="fas fa-envelope"></i> support@y15x.topup</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                <p><i class="fas fa-clock"></i> 24/7 Online</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Y15x Top Up. All rights reserved. | Made with <i class="fas fa-heart" style="color: #ff4d4d;"></i> for gamers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

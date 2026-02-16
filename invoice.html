@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Y15x Top Up - Invoice</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo-area">
+            <i class="fas fa-bolt logo-icon"></i>
+            <span class="logo-text">Y15x <span class="logo-highlight">Top Up</span></span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="games.html"><i class="fas fa-gamepad"></i> Games</a>
+            <a href="topup.html"><i class="fas fa-coins"></i> Top Up</a>
+            <a href="invoice.html" class="active"><i class="fas fa-file-invoice"></i> Invoice</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+            <a href="contact.html"><i class="fas fa-headset"></i> Contact</a>
+        </div>
+        <div class="user-profile">
+            <i class="fas fa-user-circle"></i>
+        </div>
+    </nav>
+
+    <!-- Page Header Modern -->
+    <div class="page-header-modern">
+        <div class="header-content">
+            <h1>📄 Detail Invoice</h1>
+            <p>Ringkasan transaksi top up Anda</p>
+            <div class="header-stats">
+                <span><i class="fas fa-check-circle"></i> Transaksi Sukses</span>
+                <span><i class="fas fa-clock"></i> 16 Feb 2026</span>
+            </div>
+        </div>
+        <div class="header-icon">
+            <i class="fas fa-file-invoice"></i>
+        </div>
+    </div>
+
+    <!-- Invoice Container Modern -->
+    <div class="invoice-container-modern">
+        <!-- Invoice Card -->
+        <div class="invoice-card-modern">
+            <!-- Invoice Header -->
+            <div class="invoice-header-modern">
+                <div class="invoice-brand">
+                    <i class="fas fa-bolt"></i>
+                    <h2>Y15x Top Up</h2>
+                </div>
+                <div class="invoice-status-badge paid">
+                    <i class="fas fa-check-circle"></i> LUNAS
+                </div>
+            </div>
+
+            <!-- Invoice Title -->
+            <div class="invoice-title-modern">
+                <h3>INVOICE</h3>
+                <p class="invoice-number">#INV/2026/02/001234</p>
+                <p class="invoice-date">Tanggal: 16 Februari 2026 - 14:30 WIB</p>
+            </div>
+
+            <!-- Customer Info -->
+            <div class="customer-info-modern">
+                <div class="info-box">
+                    <i class="fas fa-user"></i>
+                    <div>
+                        <p class="label">Nama Pelanggan</p>
+                        <p class="value">Andi Pratama</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p class="label">Email</p>
+                        <p class="value">andi@example.com</p>
+                    </div>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <p class="label">No. HP</p>
+                        <p class="value">081234567890</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Invoice Details Table -->
+            <table class="invoice-table-modern">
+                <thead>
+                    <tr>
+                        <th>Deskripsi</th>
+                        <th>Detail Akun</th>
+                        <th>Jumlah</th>
+                        <th>Harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="product-info">
+                                <i class="fas fa-skull"></i>
+                                <div>
+                                    <strong>Mobile Legends Diamond</strong>
+                                    <small>1400 + 50 Bonus</small>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="account-info">
+                                <p>ID: 12345678</p>
+                                <p>Server: 2250</p>
+                            </div>
+                        </td>
+                        <td>1 paket</td>
+                        <td class="price">Rp 125.000</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Payment Summary -->
+            <div class="payment-summary-modern">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span>Rp 125.000</span>
+                </div>
+                <div class="summary-row">
+                    <span>Biaya Layanan</span>
+                    <span class="free">GRATIS</span>
+                </div>
+                <div class="summary-row">
+                    <span>Diskon</span>
+                    <span>- Rp 0</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span class="total-amount">Rp 125.000</span>
+                </div>
+            </div>
+
+            <!-- Payment Details -->
+            <div class="payment-details-modern">
+                <h4><i class="fas fa-credit-card"></i> Detail Pembayaran</h4>
+                <div class="details-grid">
+                    <div>
+                        <p class="label">Metode Pembayaran</p>
+                        <p class="value"><i class="fas fa-wallet"></i> OVO Cash</p>
+                    </div>
+                    <div>
+                        <p class="label">No. Referensi</p>
+                        <p class="value">OV/20260216/789012</p>
+                    </div>
+                    <div>
+                        <p class="label">Waktu Bayar</p>
+                        <p class="value">16 Februari 2026 14:32 WIB</p>
+                    </div>
+                    <div>
+                        <p class="label">Status</p>
+                        <p class="value success">Berhasil</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="invoice-actions-modern">
+                <button class="btn-print" onclick="window.print()">
+                    <i class="fas fa-print"></i> Cetak
+                </button>
+                <button class="btn-download" id="downloadInvoice">
+                    <i class="fas fa-download"></i> Unduh PDF
+                </button>
+                <button class="btn-share">
+                    <i class="fas fa-share-alt"></i> Bagikan
+                </button>
+            </div>
+
+            <!-- Footer Note -->
+            <div class="invoice-footer-note">
+                <p><i class="fas fa-info-circle"></i> Invoice ini adalah bukti transaksi yang sah. Simpan untuk keperluan klaim jika terjadi kendala.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Modern -->
+    <footer class="footer-modern">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <i class="fas fa-bolt footer-logo"></i>
+                <h3>Y15x Top Up</h3>
+                <p>Solusi top up game terpercaya dengan harga termurah dan proses tercepat. Sudah melayani 100.000+ pelanggan.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <a href="index.html">Home</a>
+                <a href="games.html">Games</a>
+                <a href="topup.html">Top Up</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="footer-links">
+                <h4>Game Populer</h4>
+                <a href="topup.html?game=mlbb">Mobile Legends</a>
+                <a href="topup.html?game=ff">Free Fire</a>
+                <a href="topup.html?game=pubg">PUBG Mobile</a>
+                <a href="topup.html?game=valorant">Valorant</a>
+                <a href="topup.html?game=genshin">Genshin Impact</a>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="fab fa-whatsapp"></i> +62 812-3456-7890</p>
+                <p><i class="fas fa-envelope"></i> support@y15x.topup</p>
+                <p><i class="fas fa-map-marker-alt"></i> Jakarta, Indonesia</p>
+                <p><i class="fas fa-clock"></i> 24/7 Online</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Y15x Top Up. All rights reserved. | Made with <i class="fas fa-heart" style="color: #ff4d4d;"></i> for gamers</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
